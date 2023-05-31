@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark 12 - Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="isTriangle.html">isTrianlge</a>
+      <a href="quiz.html" class="active">Quiz</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="areaOfTriangles.html">Area of Triangle</a>
+    </nav>
+    <header>
+      <h1>Triangle Quiz</h1>
+    </header>
+    <section class="triangleQuiz-section">
+      <form class="quiz-form">
+        <div class="container-individualQuestion">
+          <p>
+            What's the <span class="que-underline">3rd Angle</span> for the
+            triangle where
+            <span class="que-underline">1st Angle = 45°</span> and
+            <span class="que-underline">2nd Angle = 45°</span> ??
+          </p>
+          <div id="container-inputs">
+            <label>
+              <input
+                type="radio"
+                name="questionOne"
+                value="45°" 
+              />45°
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="questionOne"
+                value="60°"
+              />60°
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="questionOne"
+                value="90°"
+              />90°
+            </label>
+          </div>
+        </div>
+        <div class="container-individualQuestion">
+          <p>
+            If a triangle has an
+            <span class="que-underline">Angle of a 90°</span>, what it's called
+            ??
+          </p>
+          <div id="container-inputs">
+            <label>
+              <input
+                type="radio"
+                name="questionTwo"
+                value="acute"
+              />acute
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="questionTwo"
+                value="obtuse"
+              />obtuse
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="questionTwo"
+                value="right angled"
+              />right angled
+            </label>
+          </div>
+        </div>
+      </form>
+      <button id="submit-btn">Submit Answer</button>
+      <div id="outputBoxTriangleQuiz"></div>
+    </section>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

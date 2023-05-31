@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-dark: #222831;
+    --secondary-dark: #393E46;
+    --yellow: #FFD369;
+    --primary-white: #EEEEEE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--secondary-dark);
+    color: var(--primary-white);
+}
+
+nav {
+    background: var(--yellow);
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    user-select: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-dark);
+    padding: 1rem;
+}
+
+nav a:hover {
+    background: var(--secondary-dark);
+    color: var(--yellow);
+    transition: 200ms;
+}
+
+.active {
+    background: var(--secondary-dark);
+    color: var(--yellow);
+}
+
+header {
+    padding: 2rem;
+    display: grid; 
+    place-items: center;
+    user-select: none;
+}
+
+header h1 {
+    color: var(--primary-white);
+    font-size: 40px;
+    color: var(--yellow);
+}
+
+/*
+for isTriangle
+*/
+
+.isTriangle-section {
+    display: grid;
+    place-items: center;
+    background: var(--primary-dark);
+    width: 80%;
+    margin: auto;
+    padding: 2rem 2rem 0rem 2rem;
+    border-radius: 10px;
+}
+
+.isTriangle-section label{
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+.isTriangle-section input {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--secondary-dark);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    width: 20%;
+}
+
+.isTriangle-section button {
+    padding: 0.3rem 0.8rem;
+    background: var(--secondary-dark);
+    border: none;
+    outline: none; 
+    color: var(--primary-white);
+    margin: 1rem 0 0.2rem 0;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.isTriangle-section button:hover {
+    background: var(--yellow);
+    color: var(--primary-dark);
+    transition: 200ms;
+}
+
+.isTriangle-section #outputBoxForIsTriangle {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2rem;
+    color: var(--yellow);
+    user-select: none;
+}
+
+
+/*
+for triangleQuiz
+*/
+
+.triangleQuiz-section {
+    background: var(--primary-dark);
+    width: 80%;
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.triangleQuiz-section .container-individualQuestion {
+    background: var(--yellow);
+    color: var(--primary-dark);
+    border-radius: 5px;
+    margin: 1rem auto;
+    padding: 2rem 1.5rem;
+    width: 95%;
+}
+.triangleQuiz-section .container-individualQuestion p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.que-underline {
+    text-decoration: underline;
+}
+
+.triangleQuiz-section .container-individualQuestion #container-inputs {
+    padding: 0.5rem 0;
+}
+
+.triangleQuiz-section .container-individualQuestion label {
+    font-size: 17px;
+    padding: 0 1rem 0 0;
+}
+
+.triangleQuiz-section .container-individualQuestion input {
+    cursor: pointer;
+    appearance: none;
+    margin-right: 5px;
+    border: 2px solid var(--primary-dark);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    top: 4px;
+    position: relative;
+    transition: 0.2s all linear;
+}
+
+.triangleQuiz-section .container-individualQuestion input:checked {
+    border:6px solid var(--primary-dark);
+}
+
+.triangleQuiz-section button {
+    margin: 1rem auto;
+    padding: 0.6rem 0.8rem;
+    background: var(--secondary-dark);
+    color: var(--primary-white);
+    font-size: 15px;
+    border: none;
+    outline: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.triangleQuiz-section button:hover {
+    background: var(--yellow);
+    color: var(--primary-dark);
+    transition: 200ms;
+}
+
+.triangleQuiz-section #outputBoxTriangleQuiz {
+    color: var(--yellow);
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 30px;
+    user-select: none;
+    text-align: center;
+}
+
+
+
+/*
+    hide input tags arrows
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

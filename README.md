@@ -22,7 +22,7 @@ Check out the live demo of the app @ [markTwelve-fun-with-triangles](https://mar
 
 ## Contributing
 
-Contributions are welcome! If you want to contribute to the Palindrome Birthday WebApp,
+Contributions are welcome! If you want to contribute to the Fun-with-Triangles WebApp,
 please follow these steps:
 
 1. Fork the repository.

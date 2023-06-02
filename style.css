@@ -56,6 +56,7 @@ header h1 {
     color: var(--primary-white);
     font-size: 40px;
     color: var(--yellow);
+    text-align: center;
 }
 
 /*
@@ -68,7 +69,7 @@ for isTriangle
     background: var(--primary-dark);
     width: 80%;
     margin: auto;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 0 2rem;
     border-radius: 10px;
 }
 
@@ -113,9 +114,9 @@ for isTriangle
     font-weight: 600;
     padding: 2rem;
     color: var(--yellow);
+    text-align: center;
     user-select: none;
 }
-
 
 /*
 for triangleQuiz
@@ -211,7 +212,7 @@ for hypotenuse
     background: var(--primary-dark);
     width: 80%;
     margin: auto;
-    padding: 0 2rem 0rem 2rem;
+    padding: 0 2rem 0 2rem;
     border-radius: 10px;
 }
 
@@ -220,6 +221,7 @@ for hypotenuse
     font-size: 18px;
     font-style: italic;
     padding: 1.5rem 0 2rem 0;
+    text-align: center;
 } 
 
 .hypotenuse-section label{
@@ -264,6 +266,7 @@ for hypotenuse
     padding: 2rem;
     color: var(--yellow);
     user-select: none;
+    text-align: center;
 }
 
 /*
@@ -321,7 +324,113 @@ for area-of-triangle
     font-weight: 600;
     padding: 2rem;
     color: var(--yellow);
+    text-align: center;
     user-select: none;
+}
+
+/*
+responsive
+*/
+
+@media only screen and (max-width: 900px) {
+    nav a{
+        padding: 0.4rem;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    /*
+    for isTriangle
+    */
+     
+    .isTriangle-section {
+        width: 85%;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .isTriangle-section label {
+        font-size: 18px;
+    }
+
+    .isTriangle-section input {
+        width: 80%;
+    }
+
+    .isTriangle-section #outputBoxForIsTriangle {
+        font-size: 20px;
+    }
+
+    /*
+    for triangleQuiz
+    */
+
+    .triangleQuiz-section {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .triangleQuiz-section .container-individualQuestion {
+        padding: 1rem;
+    }
+    
+    .triangleQuiz-section .container-individualQuestion p {
+        font-size: 18px;
+    }
+
+    .triangleQuiz-section .container-individualQuestion label {
+        font-size: 14px;
+        padding: 0 0.5rem 0 0;
+    }
+
+    .triangleQuiz-section #outputBoxTriangleQuiz {
+        font-size: 25px;
+    }
+
+    /*
+    for hypotenuse
+    */
+
+    .hypotenuse-section {
+        width: 85%;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .hypotenuse-section #outputBoxForHypotenuse {
+        font-size: 20px;
+    }
+
+    .hypotenuse-section label {
+        font-size: 18px;
+    }
+
+    .hypotenuse-section input {
+        width: 80%;
+    }
+
+    /*
+    for area-of-triangle
+    */
+
+    .areaOfTriangle-section {
+        width: 85%;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .areaOfTriangle-section label {
+        font-size: 18px;
+    }
+
+    .areaOfTriangle-section input {
+        width: 85%;
+    }
+
+    .areaOfTriangle-section #outputBoxForAreaOfTriangle {
+        font-size: 20px;
+    }
+
 }
 
 
